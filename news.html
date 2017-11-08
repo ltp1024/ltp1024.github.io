@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>刘天鹏的个人主页</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css"/>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    .margin{
+      margin: 20px 0;
+    }
+    .font-color{
+      color: #777;
+    }
+    a h3{
+      font-weight: bold;
+      font-size: 25px;
+      color: #000;
+    }
+    p{
+      font-size: 12px;
+    }
+    div#menu ul li:nth-child(4) a{
+      background-color: #FB9C00;
+      border-radius: 4px;
+    }
+
+  </style>
+</head>
+<body style="background-color: #FFF1DA;">
+<!--导航-->
+<div id="nav"></div>
+<div class="container">
+  <!-- 标题-->
+  <div class="row"  style="margin-top: 80px">
+       <div class="col-md-12 text-center" >
+         <h2 style="font-weight: bold;font-size:40px;margin: 30px 0">转载文章</h2>
+       </div>
+     </div>
+ <!-- 新闻1-->
+  <div class="row margin">
+    <div class="col-md-2">
+      <img src="img/js.jpg" class="img-responsive"/>
+    </div>
+    <div class="col-md-10">
+      <a href="#new1" data-toggle="modal"><h3>JavaScript是一种运行在浏览器中的解释型的编程语言</h3></a>
+      <p class="font-color">2017-09-20</p>
+      <p class="font-color">一个合格的开发人员应该精通JavaScript和其他编程语言。如果你已经掌握了其他编程语言，或者你还什么都不会，请立刻开始学习JavaScript，不要被Web时代所淘汰。</p>
+    </div>
+  </div>
+  <!-- 新闻2-->
+  <div class="row margin">
+    <div class="col-md-2">
+      <img src="img/git.jpg" class="img-responsive"/>
+    </div>
+    <div class="col-md-10">
+      <a href="#new2" data-toggle="modal"><h3>史上最浅显易懂的Git教程！</h3></a>
+      <p class="font-color">2017-10-15</p>
+      <p class="font-color">Git是什么？Git是目前世界上最先进的分布式版本控制系统（没有之一）。Git有什么特点？简单来说就是：高端大气上档次！</p>
+    </div>
+  </div>
+  <!-- 新闻3-->
+  <div class="row ">
+    <div class="col-md-2">
+      <img src="img/dm.jpg" class="img-responsive"/>
+    </div>
+    <div class="col-md-10">
+      <a href="#new3" data-toggle="modal"><h3>软技能：代码之外的生存指南</h3></a>
+      <p class="font-color">2017-09-08</p>
+      <p class="font-color">最近读了一本老外写的《Soft Skills: the software developer's life manual》，中文翻译是《软技能：代码之外的生存指南》。这本书是美国的一个软件开发人员写的，但是书中除了有Java、C#几个单词外，没有一行代码，因为这本书讲的是代码之外的东西。</p>
+    </div>
+  </div>
+  <!-- 新闻4-->
+  <div class="row ">
+    <div class="col-md-2">
+      <img src="img/web.jpg" class="img-responsive"/>
+    </div>
+    <div class="col-md-10">
+      <a href="#new4" data-toggle="modal"><h3>如何成长为一名优秀的前端工程师</h3></a>
+      <p class="font-color">2017-08-14</p>
+      <p class="font-color">首先，前端工程师必须得熟练掌握HTML、CSS和JavaScript。只懂其中一个或两个不行，必须对这三个都很熟悉，尤其是JS。</p>
+    </div>
+  </div>
+  
+    <div id="new1" class=" modal fade">
+        <div class="modal-dialog"><!--大小与定位-->
+            <div class="modal-content"> <!--背景，边框-->
+                <div class="modal-header">
+                    <span data-dismiss="modal" class="close">x</span>
+                    <h4>JavaScript是一种运行在浏览器中的解释型的编程语言</h4>
+                </div>
+                <div class="media-body">
+                    一个合格的开发人员应该精通JavaScript和其他编程语言。如果你已经掌握了其他编程语言，或者你还什么都不会，请立刻开始学习JavaScript，不要被Web时代所淘汰。
+                    <img src="img/wx1.png" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="new2" class=" modal fade">
+        <div class="modal-dialog"><!--大小与定位-->
+            <div class="modal-content"> <!--背景，边框-->
+                <div class="modal-header">
+                    <span data-dismiss="modal" class="close">x</span>
+                    <h4>史上最浅显易懂的Git教程！</h4>
+                </div>
+                <div class="media-body">
+                    为什么要编写这个教程？因为我在学习Git的过程中，买过书，也在网上Google了一堆Git相关的文章和教程，但令人失望的是，这些教程不是难得令人发指，就是简单得一笔带过，或者，只支离破碎地介绍Git的某几个命令，还有直接从Git手册粘贴帮助文档的，总之，初学者很难找到一个由浅入深，学完后能立刻上手的Git教程。
+                    <br/>
+                    <img src="img/wx2.png" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="new3" class=" modal fade">
+        <div class="modal-dialog"><!--大小与定位-->
+            <div class="modal-content"> <!--背景，边框-->
+                <div class="modal-header">
+                    <span data-dismiss="modal" class="close">x</span>
+                    <h4>软技能：代码之外的生存指南</h4>
+                </div>
+                <div class="media-body">
+                    最近读了一本老外写的《Soft Skills: the software developer's life manual》，中文翻译是《软技能：代码之外的生存指南》。这本书是美国的一个软件开发人员写的，但是书中除了有Java、C#几个单词外，没有一行代码，因为这本书讲的是代码之外的东西。
+                    <br/>
+                    <img src="img/wx3.png" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="new4" class=" modal fade">
+        <div class="modal-dialog"><!--大小与定位-->
+            <div class="modal-content"> <!--背景，边框-->
+                <div class="modal-header">
+                    <span data-dismiss="modal" class="close">x</span>
+                    <h4>如何成长为一名优秀的前端工程师</h4>
+                </div>
+                <div class="media-body">
+                    首先，前端工程师必须得熟练掌握HTML、CSS和JavaScript。只懂其中一个或两个不行，必须对这三个都很熟悉，尤其是JS。
+                    <img src="img/wx4.png" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/bootlint.js"></script>-->
+<script>
+  $("#nav").load("nav.html");
+//  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>
