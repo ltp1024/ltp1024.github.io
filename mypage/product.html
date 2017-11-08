@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>刘天鹏的个人主页</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css"/>
+  <script src="js/vue.js"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    .text-center{
+      text-align: center;
+    }
+    .page-title{
+      margin-top: 50px;
+    font-size: 20px;
+    color: #999;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+    }
+    a{
+      color: #e95420;
+          text-decoration: none;
+    }
+    a:hover {
+    text-decoration: underline;
+    color: #ac3911;
+    transition: all .2s linear;
+  }
+  div#menu ul li:nth-child(2) a{
+      background-color: #FB9C00;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<!--导航-->
+<div id="nav"></div>
+<div class="container">
+  <!-- 标题-->
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="page-title">文章列表</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1 >
+      <a href="#">
+      Topic:生活点滴
+      </a>
+      </h1>
+    </div>
+  </div>
+  <div class="row" style="height:60px;border-top:1px dashed #cacaca;border-bottom:1px     dashed #cacaca;color:#dd4814;line-height:60px">
+    2016年12月01日
+  </div>
+  <div id="lifeone">
+  <div class="row">
+    <div class="col-md-12">
+      <p v-if="isShow">我们总是以为自己很不快乐，其实在这个世界上，永远是比下有余，因为生活不会因为你是什么，而给予特别的照顾，所以我们没有必要怨天尤人，因为生活对于所有的人是公平的。不要去幻想明天，不要去渴望未来，因为长期沉湎于白日梦的最终结果，是我们把自己的人生完全毁于无度的假设之中。<button class="btn btn-success" @click="toggleText" v-if="isShow">展开全部</button></p>
+      <p v-if="!isShow">我们总是以为自己很不快乐，其实在这个世界上，永远是比下有余，因为生活不会因为你是什么，而给予特别的照顾，所以我们没有必要怨天尤人，因为生活对于所有的人是公平的。不要去幻想明天，不要去渴望未来，因为长期沉湎于白日梦的最终结果，是我们把自己的人生完全毁于无度的假设之中。其实我们也不需要去欣赏朝霞的美丽，其实人生也会有炫目的瞬间，因为美丽不是一时一刻造就的，其实更多的时候，美丽来源于自己的对生活的感知，和对于人生的深层的领悟。
+
+成功对于不同的人的理解不一样，因为有的人觉得成功就是光宗耀祖，有的人觉得成功就是家财万贯，有的人觉得成功就是左拥右抱，有的人觉得成功就是抱住某一个权贵的大腿，有的人觉得成功就是家和万事兴，有的人觉得成功就是领略这河山的美丽，自然的无限魅力，有的人觉得成功就是把自己的事业无限的做大，有的人觉得成功就是可以码点文字；有的人觉得成功就是某一顿都可以小酌一杯，其实人生谁不渴望成功，只是人的机遇不同，或者说胆识不同，生活的环境不同，所以对于成功的要求也不一样，不可能这个世界都是成功的创业者，或者说都是成功的可以进官加爵，所以我们只能用平常的心态去看待不同的人对于成功的不同的理解，不可能都是拿破仑，也不可能都是居里夫人。
+
+我们在和人交往的时候，总是用自己的心态，来看待别人，我们总是因为自己就是对的，其实有时候错了，承认一个错误，又有什么不妥？可是我们有些人就是不愿意承认，如果认错了，就会觉得自己跌了身份，或者说丢了价，为什么有这样可怕的想法，比如说精英错了，他会找很多个假设来证明自己的正确，如果是官员错了，也会找出很多个理由来搪塞民众，最后如果理缺词穷的话，来一句政府还会有错吗？视乎自己就是政府，这是多么可怕而又怪异的言论，这其实就是对民众不负责任的表现，有些人往往把自己当成真理的化身，更有甚至把自己当成一个时代的代言人，这个世界什么时候人都会犯错误，其实犯错误不是很可怕，可怕的是犯了错误，还不愿意承认；这可能是人的劣根性的最佳的表达方式吧。
+
+人总会觉得自己是努力的，其实很多时候，我们不是在努力，因为很多人都是在做一些重复的工作，甚至是无用的工作，因为我们很多人，没有一个明确的目标，因为我们只知道今天攒钱今天用，至于明天我们需要干什么，要把自己的生活提升到什么样子，提升到什么层次，所以我们更多地人在做出无谓的浪费时间，我们更多地人在耗费自己的时间，所以我们很多的人到了老了的时候，才后悔自己的一生什么没有做过，什么也没有打拼过。
+
+我们完全可以心气平和的去做一些事，说一些话，因为我们是可以改变自己的，我们也可以克制自己，我们的说话只是需要清楚的表述自己的思想，因为我们可以回辟咆哮，我可以心平气和，我们可以知书达理，我们也可以温文尔雅，我们更可以言语如春风，我们也可以言语如夏天的凉风佛过人的心怀。其实我们什么都可以，因为我们是理智的动物，我们是有生活智慧的，我们是可以改变自己的一切的。<button v-if="!isShow" @click="toggleText" class="btn btn-danger">收起</button></p>
+    </div>
+  </div>
+  </div>
+  <div class="row" style="height:60px;border-top:1px dashed #cacaca;border-bottom:1px     dashed #cacaca;color:#dd4814;line-height:60px">
+    2017年02月14日
+  </div>
+  <div id="lifetwo">
+  <div class="row">
+    <div class="col-md-12">
+      <p v-if="isShow">情人节，我只想简单的和你这样度过<button class="btn btn-success" @click="toggleText" v-if="isShow">展开全部</button></p>
+      <p v-if="!isShow">亲情不需要太多的语言去解释，哪怕你与父母之间的一个眼神，都能更深刻的表达彼此间的爱意，这种爱，是与生俱来的，是无私的， 爱情不需要多么的华丽，再浪漫的爱情，也会有花开花谢时，其实，平淡的生活才是磨练爱情的最佳武器，这种爱，如果能够持久，那才是人生中最快乐的时光。友情不需要过多的安慰，在你最困难的时候，朋友可以向你伸出援助之手，而不求任何的回报，互相理解彼此之间的感受，这种情意，我们一辈子都无法忘记。
+
+每个人都有一段自己的人生经历，每个人从来到人世的那一天起，上天早已安排你将要扮演什么样的角色，生死轮回，富贵在天，什么才是幸福，其实幸福就在身边，平淡而简单的日子，才是最幸福的。
+
+自古只羡鸳鸯不羡仙，执子之手与子偕老，相爱的人能够相扶到老，才是最快乐的。爱情故事很多，如梁山伯与祝英台，贾宝玉与林黛玉，牛郎与织女，哪一对不是令人羡慕的情侣，而他们最终的结局又将如何。她们也渴望幸福，她们也渴望平淡的生活，而他们往往却得不到这样的生活。
+
+就像我们现在是个普通人一样，也许你不甘愿做一个普通人，你也想让自己与众不同，也想让自己变得富甲一方，当你得到了所有想要的一切，你会发现你又失去了很多，人生就是如此有利便有弊。每天面对着衣食住行，柴米油盐酱醋茶，谁都会有抱怨的时候，当我们回过头来再仔细想想时，这些是不是就是幸福，一家人团团圆圆生活在一起，和睦相处，其乐融融。
+
+当你们离开了自己一直生活的家，离开了父母独自去支撑起一片天时，是否会想到父母曾经的心酸，你们才能真正的感受到劳累，感受父母养育之恩，你的心会被融化，这就是幸福。
+
+当你们嫁给心爱的人时，在一起的时候，你们是否会说一些未经过大脑思考的话，会说一些对爱人无理的话，所看到的只有对方的缺点，而往往把优点忽视，时不时还会发生一些小摩擦。当双方离开时，才会发现那些曾经在一起的日子是多么的幸福。生活变得枯燥时，而所有的回忆，都是对方的优点，也不再斤斤计较，点点滴滴记在心头，人生就是如此，失去之后才懂得珍惜，而幸福在身边时，却不懂得珍惜，与幸福失之交臂。<button v-if="!isShow" @click="toggleText" class="btn btn-danger">收起</button></p>
+    </div>
+  </div>
+  </div>
+  <div class="row" style="height:60px;border-top:1px dashed #cacaca;border-bottom:1px     dashed #cacaca;color:#dd4814;line-height:60px">
+    2017年05月23日
+  </div>
+  <div id="lifethree">
+  <div class="row">
+    <div class="col-md-12">
+      <p v-if="isShow">离别总是伤心的，分别总是难免的，其实，这些都是一时的，忘记才是内心深处最大伤，更是一段不能愈合的内伤。我常常告诫自己，忘记吧，已不属于你了，放手吧，你已背道而驰了。越是想念只会让自己伤口上撒盐，越是幻想只会让你我徒增烦恼。美好的爱情不一定要白首到老，其实珍藏起来，怀念更好。也许有太多的心酸和不舍，也许有太多的难过与伤痛。但一切的一切倒不如写成故事，两个人焚而取暖。<button class="btn btn-success" @click="toggleText" v-if="isShow">展开全部</button></p>
+      <p v-if="!isShow">离别总是伤心的，分别总是难免的，其实，这些都是一时的，忘记才是内心深处最大伤，更是一段不能愈合的内伤。我常常告诫自己，忘记吧，已不属于你了，放手吧，你已背道而驰了。越是想念只会让自己伤口上撒盐，越是幻想只会让你我徒增烦恼。美好的爱情不一定要白首到老，其实珍藏起来，怀念更好。也许有太多的心酸和不舍，也许有太多的难过与伤痛。但一切的一切倒不如写成故事，两个人焚而取暖。故事的发生总是向前的，爱情也一样，美好总在前面。不屈不挠的爱情那是写在书本上的，只因我还不是圣人，做不到你想要的，太多的眼泪已经流走，其实眼泪已经混合着鼻涕谁也分不清了，即便分清又如何呢？因为它还在流，何时停止，我也不知道。我深爱的你，我相信你能向前看，因为后方有我。前面或许荆棘密布，但总会拨云见日，而转身踩到的首先是你的影子。每个人有每个人的人生轨迹，我们两的轨迹从开始的分开到中途的交融，再到以后谁也不知道的未来。因为未来是留给我们自己的，而不是我们的。向前看吧，我们两有太多的为对方考虑了，这并不能使我们快乐、幸福，反而会让我们更加的难以释怀。我相信你，一定会有一个美好的未来，不管这个未来有没有我，我一样的祝福你，我曾深爱过得你，我最好的朋友。<button v-if="!isShow" @click="toggleText" class="btn btn-danger">收起</button></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<!--<script src="js/bootlint.js"></script>-->
+<script>
+  $("#nav").load("nav.html");
+  new Vue({
+      el:"#lifeone",
+      data:{
+        isShow:true,
+      },
+      methods:{
+        toggleText:function(){
+          if(this.isShow==true){
+            this.isShow=false
+          }else{
+            this.isShow=true
+          }
+        }
+      }
+    })
+  new Vue({
+      el:"#lifetwo",
+      data:{
+        isShow:true,
+      },
+      methods:{
+        toggleText:function(){
+          if(this.isShow==true){
+            this.isShow=false
+          }else{
+            this.isShow=true
+          }
+        }
+      }
+    })
+  new Vue({
+      el:"#lifethree",
+      data:{
+        isShow:true,
+      },
+      methods:{
+        toggleText:function(){
+          if(this.isShow==true){
+            this.isShow=false
+          }else{
+            this.isShow=true
+          }
+        }
+      }
+    })
+//  bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>
